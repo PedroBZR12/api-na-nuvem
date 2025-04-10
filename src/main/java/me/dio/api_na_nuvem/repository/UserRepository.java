@@ -7,5 +7,5 @@ import me.dio.api_na_nuvem.domain.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{
-
+    boolean existsByAccountNumber(String number);
 }
