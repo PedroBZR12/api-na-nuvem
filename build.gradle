@@ -28,6 +28,12 @@ dependencies {
 
 }
 
+tasks.jar{
+	manifest{
+		attributes["Main-Class"] = "api-na-nuvem/src/main/java/me/dio/api_na_nuvem/ApiNaNuvemApplication.java"
+	}
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
